@@ -777,15 +777,21 @@ p {
 }
 
 .form-label {
+  position: relative;
+
   display: flex;
   flex-direction: column;
   margin-left: 0;
-  margin-bottom: 10px;
   text-align: left;
+  margin-bottom: 10px;
 }
 
-.form-label:last-child {
-  padding-bottom: 20px;
+label > input.form-input {
+  margin-bottom: 10px;
+}
+
+label > textarea {
+  margin-bottom: 20px;
 }
 
 .form-label:first-child {
@@ -823,6 +829,10 @@ p {
   color: rgba(117, 117, 117, 0.5);
 } */
 
+.form-checkbox-policy {
+  margin-right: 8px;
+}
+
 .form-btn {
   margin-top: 30px;
 }
@@ -830,4 +840,25 @@ p {
 .form-conditions {
   color: var(--accent-text-color);
   text-decoration: underline;
+}
+
+.icon-form {
+  position: absolute;
+  bottom: 11px;
+  left: 12px;
+
+  width: 18px;
+  height: 18px;
+}
+
+.icon-form-telegram {
+  margin-left: 10px;
+  width: 24px;
+  height: 24px;
+}
+
+.subscribe {
+  display: flex;
+  /* flex-direction: column; */
+  margin-left: 93px;
 }

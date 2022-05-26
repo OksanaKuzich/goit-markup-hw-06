@@ -786,14 +786,6 @@ p {
   margin-bottom: 10px;
 }
 
-label > input.form-input {
-  margin-bottom: 10px;
-}
-
-label > textarea {
-  margin-bottom: 20px;
-}
-
 .form-label:first-child {
   margin-top: 12px;
 }
@@ -806,8 +798,28 @@ label > textarea {
 
   margin: 0;
   padding: 0;
+  padding-left: 42px;
 }
 
+.form-label:hover .form-subtitle,
+.form-label:focus .form-subtitle {
+  color: var(--accent-text-color);
+}
+
+.form-label:hover .form-input,
+.form-label:focus .form-input {
+  border-color: var(--accent-text-color);
+}
+
+.form-label:hover .icon-form,
+.form-label:focus .icon-form {
+  fill: var(--accent-text-color);
+}
+
+.modal-btn:hover .icon-close,
+.modal-btn:focus .icon-close {
+  fill: var(--accent-text-color);
+}
 .form-comment {
   resize: none;
 
@@ -818,16 +830,13 @@ label > textarea {
   height: 120px;
 }
 
-/* placeholder {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
+.form-comment::placeholder {
   font-size: 12px;
-  line-height: 14px;
+  line-height: 1.17;
   letter-spacing: 0.01em;
 
   color: rgba(117, 117, 117, 0.5);
-} */
+}
 
 .form-checkbox-policy {
   margin-right: 8px;
@@ -861,4 +870,23 @@ label > textarea {
   display: flex;
   /* flex-direction: column; */
   margin-left: 93px;
+}
+
+.form-subtitle {
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+
+  color: var(--second-text-color);
+}
+
+.form-checkbox-subtitle {
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--second-text-color);
+}
+
+.icon-close {
+  width: 18px;
+  height: 18px;
 }

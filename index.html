@@ -80,7 +80,7 @@
               </b>
               <form class="form">
                 <label for="name" class="form-label"
-                  >Имя
+                  ><span class="form-subtitle">Имя</span>
                   <input
                     type="text"
                     class="form-input"
@@ -93,13 +93,13 @@
                 </label>
 
                 <label for="tel" class="form-label"
-                  >Телефон
+                  ><span class="form-subtitle">Телефон</span>
                   <input type="tel" class="form-input" name="tel" id="tel" />
                   <svg class="icon-form">
                     <use href="./images/icon/sprite.svg#form-phone"></use></svg
                 ></label>
                 <label for="mail" class="form-label"
-                  >Почта
+                  ><span class="form-subtitle">Почта</span>
                   <input
                     type="email"
                     class="form-input"
@@ -109,7 +109,7 @@
                     <use href="./images/icon/sprite.svg#form-email"></use></svg
                 ></label>
                 <label for="comment" class="form-label"
-                  >Kомментарий
+                  ><span class="form-subtitle">Kомментарий</span>
                   <textarea
                     name="comment"
                     class="form-comment"
@@ -126,7 +126,9 @@
                     class="form-checkbox-policy"
                     name="policy"
                     id="policy"
-                  />Соглашаюсь с рассылкой и принимаю
+                  /><span class="form-checkbox-subtitle"
+                    >Соглашаюсь с рассылкой и принимаю</span
+                  >
                   <a class="form-conditions">Условия договора</a></label
                 >
 
@@ -134,16 +136,8 @@
               </form>
 
               <button type="button" class="modal-btn" data-modal-close>
-                <svg
-                  width="18px"
-                  height="18px"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M15 4.108 13.892 3 9.5 7.392 5.108 3 4 4.108 8.392 8.5 4 12.892 5.108 14 9.5 9.608 13.892 14 15 12.892 10.608 8.5 15 4.108Z"
-                    fill="#000"
-                  />
+                <svg class="icon-close">
+                  <use href="./images/icon/sprite.svg#icon-close"></use>
                 </svg>
               </button>
             </div>
@@ -712,6 +706,26 @@
               </a>
             </li>
           </ul>
+        </div>
+        <div class="subscribe">
+          <form>
+            <b class="join-title">Подпишитесь на рассылку</b>
+            <label for="mail" class="form-label">
+              <input
+                type="email"
+                class="form-input"
+                name="mail"
+                id="mail"
+                placeholder="Email"
+              />
+            </label>
+            <button type="submit" class="form-btn btn">
+              Подписаться
+              <svg class="icon-form-telegram">
+                <use href="./images/icon/sprite.svg#form-telegram"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>

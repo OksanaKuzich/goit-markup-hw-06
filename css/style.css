@@ -896,7 +896,7 @@ p {
 
 .form-checkbox-policy:checked + .custom-checkbox .icon-check {
   opacity: 1;
-  border-color: transparent;
+  outline: transparent;
 }
 
 .form-btn {

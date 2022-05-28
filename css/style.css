@@ -808,27 +808,27 @@ p {
 }
 
 .form-label:hover .form-subtitle,
-.form-label:focus .form-subtitle {
+.form-label:focus-within .form-subtitle {
   color: var(--accent-text-color);
 }
 
 .form-label:hover .form-input,
-.form-label:focus .form-input {
+.form-label:focus-within .form-input {
   border-color: var(--accent-text-color);
 }
 
 .form-label:hover .icon-form,
-.form-label:focus .icon-form {
+.form-label:focus-within .icon-form {
   fill: var(--accent-text-color);
 }
 
 .form-label:hover .form-comment,
-.form-label:focus .form-comment {
+.form-label:focus-within .form-comment {
   border-color: var(--accent-text-color);
 }
 
 .modal-btn:hover .icon-close,
-.modal-btn:focus .icon-close {
+.modal-btn:focus-within .icon-close {
   fill: var(--accent-text-color);
 }
 .form-comment {
@@ -985,7 +985,7 @@ p {
 }
 
 .form-label-footer:hover .form-input-footer,
-.form-label-footer:focus .form-input-footer {
+.form-label-footer:focus-within .form-input-footer {
   border-color: var(--accent-text-color);
 }
 

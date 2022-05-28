@@ -869,7 +869,6 @@ p {
 
   border: 1px solid var(--logo-text-color);
   border-radius: 2px;
-  outline-offset: -1px;
   overflow: hidden;
 
   margin-right: 8px;
@@ -896,7 +895,10 @@ p {
 
 .form-checkbox-policy:checked + .custom-checkbox .icon-check {
   opacity: 1;
-  outline: transparent;
+}
+
+.form-checkbox-policy:checked ~ .custom-checkbox {
+  border: none;
 }
 
 .form-btn {
